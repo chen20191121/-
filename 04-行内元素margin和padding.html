@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* 1. 行内元素 padding 上下无效，左右有效;
+       2. 行内元素  margin 上下无效，左右有效;
+       3. 行内块元素  padding有效；
+       4. 行内块元素  margin有效；
+    */
+    span,a{
+      /* padding: 30px; */
+      background-color: green;
+      margin: 30px;
+    }
+    button{
+      width: 100px;
+      height: 30px;
+      padding: 30px;
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+  <p>这是p标签</p>
+  <span>这是span标签</span>
+  <span>这是span标签</span>
+  <a href="#">这是a标签</a>
+  <a href="#">这是a标签</a>
+  <p>这是p标签</p>
+  <hr>
+  <button>按钮1</button>
+  <button>按钮2</button>
+  <p>这是p标签</p>
+</body>
+</html>

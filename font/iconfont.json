@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1084703",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "4936656",
+      "name": "home-fill",
+      "font_class": "home-fill",
+      "unicode": "e867",
+      "unicode_decimal": 59495
+    },
+    {
+      "icon_id": "6151151",
+      "name": "user-fill",
+      "font_class": "user-fill",
+      "unicode": "e7d5",
+      "unicode_decimal": 59349
+    },
+    {
+      "icon_id": "10560663",
+      "name": "Bag",
+      "font_class": "Bag",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    }
+  ]
+}

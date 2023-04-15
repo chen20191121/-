@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .card{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 100px auto;
+    }
+    .card .img{
+      width: 100%;
+      height: 100%;
+      transition: all ease .8s;
+    }
+    .card:hover .img{
+      transform: scale(1.1);
+    }
+    .card::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 0;
+      height: 50%;
+      background-color: rgba(0,0,0,.5);
+      transition: all cubic-bezier(.82,-0.05,.2,.98) .8s;
+      z-index: 1;
+    }
+    .card:hover::before{
+      width: 100%;
+    }
+    .card .cover-info{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 0;
+      height: 50%;
+      box-sizing: border-box;
+      overflow: hidden;
+      /* 透明色 */
+      color: #fff;
+      background-color: rgba(0,0,0,.5);
+      z-index: 1;
+      transition: all cubic-bezier(.82,-0.05,.2,.98) .8s .4s;
+    }
+    .card .cover-info .text-wrapper{
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .card:hover .cover-info{
+      width: 100%;
+    }
+    .card .cover-info .title,
+    .card .cover-info .text{
+      width: 280px;
+      transform: translateY(28px);
+      opacity: 0;
+      transition: all ease .8s .4s;
+      overflow: hidden;
+      /* margin: 10px auto; */
+    }
+    .card:hover .cover-info .title,
+    .card:hover .cover-info .text{
+      transform: translateY(0);
+      opacity: 1;
+      color: #79bcc1;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="img" src="imgs/p1.png" alt="">
+    <div class="cover-info">
+      <div class="text-wrapper">
+        <h2 class="title">欢迎来到不凡学院</h2>
+        <p class="text">今天我们学习css3的过渡效果今天我们学习css3的过渡效果今天我们学习css3的过渡效果</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
